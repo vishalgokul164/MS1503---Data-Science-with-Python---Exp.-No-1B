@@ -16,9 +16,9 @@ To analyze quarterly product sales data across multiple products and quarters us
    * Identify the minimum sales figure using `np.min(sales)`.
 7. **Display Analysis Summary**: Print the original sales matrix, product-wise totals, quarter-wise totals, overall average, highest sale, and lowest sale.
 8. **Stop** the program.
-## Program
 
-# Step 1: Create 2D array (Rows = Products, Columns = Quarters)
+
+## Program
 
 import numpy as np
 
@@ -30,16 +30,11 @@ sales = np.array([[1000, 1200, 1150, 1400],
 
 print("Sales Data (Rows-Products, Columns Quarters):\n", sales)
 
-# Step 2: Calculate Aggregations and Summary Statistics
-
-
 product_total = np.sum(sales, axis=1)
 
 quarter_total = np.sum(sales, axis=0)
 
 overall_avg = np.mean(sales)
-
-# Step 3: Display Summary
 
 import numpy as np
 
@@ -66,6 +61,7 @@ print("Overall Average Sales:", overall_avg)
 print("Highest Sale:", np.max(sales))
 
 print("Lowest Sale:", np.min(sales))
+
 
 ## Output
 
