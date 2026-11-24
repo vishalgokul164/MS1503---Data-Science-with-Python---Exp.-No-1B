@@ -20,47 +20,27 @@ To analyze quarterly product sales data across multiple products and quarters us
 
 ## Program
 
-import numpy as np
-
-sales = np.array([[1000, 1200, 1150, 1400],
-
-[800, 950, 1050, 1300],
-
-[1500, 1600, 1550, 1700]])
-
-print("Sales Data (Rows-Products, Columns Quarters):\n", sales)
-
-product_total = np.sum(sales, axis=1)
-
-quarter_total = np.sum(sales, axis=0)
-
-overall_avg = np.mean(sales)
-
-import numpy as np
-
-sales = np.array([[1000, 1200, 1150, 1400],
-
-[800, 950, 1050, 1300],
-
-[1500, 1600, 1550, 1700]])
-
-print("Sales Data (Rows-Products, Columns Quarters):\n", sales)
-
-product_total = np.sum(sales, axis=1)
-
-quarter_total = np.sum(sales, axis=0)
-
-overall_avg = np.mean(sales)
-
-print("\nTotal Sales per Product:", product_total)
-
-print("Total Sales per Quarter:", quarter_total)
-
-print("Overall Average Sales:", overall_avg)
-
-print("Highest Sale:", np.max(sales))
-
-print("Lowest Sale:", np.min(sales))
+import numpy as np  
+sales = np.array([[1000, 1200, 1150, 1400],  
+[800, 950, 1050, 1300],  
+[1500, 1600, 1550, 1700]])  
+print("Sales Data (Rows-Products, Columns Quarters):\n", sales)  
+product_total = np.sum(sales, axis=1)  
+quarter_total = np.sum(sales, axis=0)  
+overall_avg = np.mean(sales)  
+import numpy as np  
+sales = np.array([[1000, 1200, 1150, 1400],  
+[800, 950, 1050, 1300],  
+[1500, 1600, 1550, 1700]])  
+print("Sales Data (Rows-Products, Columns Quarters):\n", sales)  
+product_total = np.sum(sales, axis=1)  
+quarter_total = np.sum(sales, axis=0)  
+overall_avg = np.mean(sales)  
+print("\nTotal Sales per Product:", product_total)  
+print("Total Sales per Quarter:", quarter_total)  
+print("Overall Average Sales:", overall_avg)  
+print("Highest Sale:", np.max(sales))  
+print("Lowest Sale:", np.min(sales))  
 
 
 ## Output
